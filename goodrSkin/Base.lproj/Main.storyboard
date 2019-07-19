@@ -1,24 +1,763 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tcS-hg-DAV">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Glass.otf">
+            <string>Glass</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Main screen-->
+        <scene sceneID="VgN-jw-so2">
+            <objects>
+                <viewController title="Main screen" id="wsW-GP-meK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F8o-lu-ie0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnL-a7-cUV">
+                                <rect key="frame" x="186" y="146" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="woi-xz-wyf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GOODR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsQ-hQ-h3r">
+                                <rect key="frame" x="108" y="92" width="199" height="45.666666666666657"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0J-XX-Op5">
+                                <rect key="frame" x="66" y="226" width="283" height="544"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="108" translatesAutoresizingMaskIntoConstraints="NO" id="wPh-PJ-s7K">
+                                        <rect key="frame" x="20" y="20" width="237" height="484"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtR-3S-Sey">
+                                                <rect key="frame" x="54.666666666666657" y="0.0" width="128" height="40"/>
+                                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="26"/>
+                                                <state key="normal" title="SKINCARE">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="mgI-6x-IFi" kind="show" id="Xzo-b7-qwy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-5z-5rL">
+                                                <rect key="frame" x="10" y="148" width="217" height="40"/>
+                                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="26"/>
+                                                <state key="normal" title="MENTAL HEALTH">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="7HV-vb-Ehd" kind="show" id="E8A-VO-kiN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G7-HK-YcV">
+                                                <rect key="frame" x="0.0" y="296" width="237" height="40"/>
+                                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="26"/>
+                                                <state key="normal" title="PHYSICAL HEALTH">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="x37-mm-JHr" kind="show" id="cmr-SH-swP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83W-Za-kCj">
+                                                <rect key="frame" x="73.666666666666671" y="444" width="90.000000000000014" height="40"/>
+                                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="26"/>
+                                                <state key="normal" title="GOALS">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do good. Be good.  Become Goodr" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar7-Zr-ZSf">
+                                <rect key="frame" x="132" y="127" width="150" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="woi-xz-wyf" firstAttribute="trailing" secondItem="Ftf-OO-EqB" secondAttribute="trailing" id="VFs-vQ-QdU"/>
+                            <constraint firstItem="woi-xz-wyf" firstAttribute="top" secondItem="F8o-lu-ie0" secondAttribute="top" id="fnC-7l-xB3"/>
+                            <constraint firstItem="woi-xz-wyf" firstAttribute="leading" secondItem="Ftf-OO-EqB" secondAttribute="leading" id="lcQ-md-Fkd"/>
+                            <constraint firstAttribute="bottom" secondItem="woi-xz-wyf" secondAttribute="bottom" id="phS-F9-Q7b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ftf-OO-EqB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JSd-ug-2zh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pP7-zw-txL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.15942028985509" y="-6.0267857142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d78-GP-j9G">
+            <objects>
+                <viewController id="mgI-6x-IFi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acd-jb-t1o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="FHA-IL-v6r">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SKINCARE" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwY-U8-4Eu">
+                                <rect key="frame" x="83" y="106" width="248" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JId-2l-Gny">
+                                <rect key="frame" x="74" y="196" width="266" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="26"/>
+                                <state key="normal" title="SKINCARE 101">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="WaE-x1-3pg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ozq-N5-phd">
+                                <rect key="frame" x="35" y="350" width="345" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="26"/>
+                                <state key="normal" title="    ALWAYS WEAR (SUN) PROTECTION">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZNS-zC-rxD" kind="show" id="4Zy-vg-1lD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fOW-VC-09N">
+                                <rect key="frame" x="40" y="510" width="343" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="26"/>
+                                <state key="normal">
+                                    <string key="title">      Meet The New Skin
+Brightening Ingredient </string>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="WcQ-pH-NN8" kind="show" id="mON-B8-TBo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Dxd-Eu-cwz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZX-ob-IQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="685.71428571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vpw-ya-8EK">
+            <objects>
+                <viewController id="ZNS-zC-rxD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g97-oa-bmb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1179"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="BKs-IA-bV0">
+                                <rect key="frame" x="0.0" y="141" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91e-kC-GZ8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="1057"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6l1-Ef-z2G">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    !!!ALWAYS WEAR  (SUN) PROTECTION!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX0-cZ-bdB">
+                                                <rect key="frame" x="33" y="0.0" width="348" height="88"/>
+                                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="31"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="43" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-7X-pV7">
+                                                <rect key="frame" x="21" y="75" width="373" height="857"/>
+                                                <string key="text">Hannah Montana said it best, 'Everybody makes mistakes; Everybody has those days', and come summer, where we might try our damn best of avoiding getting a sunburn, sometimes it just happens to the best of us. Whether you committed the grave, faux-pas of not applying SPF or whether you had too much fun in the sun and didn't apply it as diligently, the sun has its sneaky ways of setting on your skin.
+
+That being said, we all have experienced at one point or another in our lives the hot sensation that sunburns give. From not being able to hang your tote on your shoulder because it's bright red, not being able to apply your usual moisturizers because everything tingles, or wanting all your beverages to be cold because your lips are way too sensitive, there are plenty of products to prevent this from happening but there are also plenty you should stock up on before your next beach trip, hiking outing, or park suntanning.
+
+Whether it's a lip balm you can carry everywhere you go, a face mask to give you a pick me up, a thermal spray to hydrate and soothe your skin in one step or even just plain old aloe vera gel, the 10 products ahead will help you soothe your skin and get back to normal, in no time.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="uvX-7X-pV7" firstAttribute="top" secondItem="6l1-Ef-z2G" secondAttribute="top" constant="75" id="4tZ-dx-9v1"/>
+                                            <constraint firstAttribute="height" constant="1000" id="7CJ-zZ-mYr"/>
+                                            <constraint firstAttribute="bottom" secondItem="uvX-7X-pV7" secondAttribute="bottom" constant="68" id="SMm-IG-h4e"/>
+                                            <constraint firstAttribute="trailing" secondItem="uvX-7X-pV7" secondAttribute="trailing" constant="20" id="Vtj-WO-ufw"/>
+                                            <constraint firstItem="uvX-7X-pV7" firstAttribute="leading" secondItem="6l1-Ef-z2G" secondAttribute="leading" constant="21" id="c2r-7H-55o"/>
+                                            <constraint firstItem="sX0-cZ-bdB" firstAttribute="leading" secondItem="6l1-Ef-z2G" secondAttribute="leading" constant="33" id="cMd-Uc-UqA"/>
+                                            <constraint firstAttribute="bottom" secondItem="sX0-cZ-bdB" secondAttribute="bottom" constant="912" id="j78-cT-rlj"/>
+                                            <constraint firstAttribute="trailing" secondItem="sX0-cZ-bdB" secondAttribute="trailing" constant="33" id="kxS-XR-ihG"/>
+                                            <constraint firstItem="sX0-cZ-bdB" firstAttribute="top" secondItem="6l1-Ef-z2G" secondAttribute="top" id="sol-Dc-3O0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6l1-Ef-z2G" firstAttribute="top" secondItem="91e-kC-GZ8" secondAttribute="top" id="8ra-1y-Njg"/>
+                                    <constraint firstItem="6l1-Ef-z2G" firstAttribute="leading" secondItem="91e-kC-GZ8" secondAttribute="leading" id="Fu5-er-frv"/>
+                                    <constraint firstAttribute="trailing" secondItem="6l1-Ef-z2G" secondAttribute="trailing" id="em6-Ri-O2m"/>
+                                    <constraint firstAttribute="bottom" secondItem="6l1-Ef-z2G" secondAttribute="bottom" id="xoH-c0-vg2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TgS-bP-JVc" firstAttribute="bottom" secondItem="91e-kC-GZ8" secondAttribute="bottom" id="4xq-s6-3Bj"/>
+                            <constraint firstItem="91e-kC-GZ8" firstAttribute="leading" secondItem="TgS-bP-JVc" secondAttribute="leading" id="9aG-Ta-1se"/>
+                            <constraint firstItem="TgS-bP-JVc" firstAttribute="trailing" secondItem="91e-kC-GZ8" secondAttribute="trailing" id="9jX-NB-0dg"/>
+                            <constraint firstItem="91e-kC-GZ8" firstAttribute="top" secondItem="TgS-bP-JVc" secondAttribute="top" id="HWu-lQ-BVB"/>
+                            <constraint firstItem="6l1-Ef-z2G" firstAttribute="width" secondItem="g97-oa-bmb" secondAttribute="width" id="uap-d4-brT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TgS-bP-JVc"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="1179"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkJ-ed-aur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="904.34782608695662" y="780.46875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6hW-cO-F5v">
+            <objects>
+                <viewController id="WcQ-pH-NN8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbH-kD-D2M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="dLa-x2-vIV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Meet The New Skin Brightening Ingredient " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ0-bT-qef">
+                                <rect key="frame" x="16" y="88" width="382" height="60.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zO-fJ-2y9">
+                                <rect key="frame" x="16" y="155" width="382" height="588.33333333333337"/>
+                                <string key="text">When it comes to summer souvenirs, a smattering of newfound freckles is one thing. But melasma—a puzzle of brown patches resembling the inkblots on a Rorschach test—is quite another. A common form of hyperpigmentation that typically dapples the cheeks and forehead, as well as the eye and lip areas, melasma can be caused by elevated estrogen levels, plain old UV exposure, or heat. And it's increasingly common among women in their 30s and 40s, affecting as many as five million people in the U.S. alone.
+
+Los Angeles-based aesthetician Gina Marí has long recommended a varied protocol to treat dark spots on her red-carpet clientele—topical lightening agents, exfoliating acid peels, and nonthermal lasers that use acoustic energy to shatter pigment particles. Now Marí joins a growing number of facialists, as well as doctors, championing a new ingredient that's already showing promise in Japan and South Korea.
+
+While tranexamic acid is not yet available over-the-counter Stateside, a topical form appears in the latest dark-spot launches, including SkinMedica's Lytera 2.0 Pigment Correcting Serum and SkinCeuticals Discoloration Defense. “There still isn't a cure,” Samolitis insists. “But things are looking a lot brighter.”</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1zO-fJ-2y9" firstAttribute="centerX" secondItem="kbH-kD-D2M" secondAttribute="centerX" id="4fB-FH-kwD"/>
+                            <constraint firstItem="TZ0-bT-qef" firstAttribute="centerX" secondItem="kbH-kD-D2M" secondAttribute="centerX" id="BMU-VU-YYU"/>
+                            <constraint firstItem="D7r-94-zKQ" firstAttribute="trailing" secondItem="1zO-fJ-2y9" secondAttribute="trailing" constant="16" id="OhT-nj-mii"/>
+                            <constraint firstItem="1zO-fJ-2y9" firstAttribute="leading" secondItem="D7r-94-zKQ" secondAttribute="leading" constant="16" id="SZs-8S-T0o"/>
+                            <constraint firstItem="TZ0-bT-qef" firstAttribute="top" secondItem="D7r-94-zKQ" secondAttribute="top" id="TC2-Aq-Zdi"/>
+                            <constraint firstItem="1zO-fJ-2y9" firstAttribute="centerY" secondItem="kbH-kD-D2M" secondAttribute="centerY" id="vmP-3r-6JW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D7r-94-zKQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBp-T5-a42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="875"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="goodrSkin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="YJQ-T0-7he">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axr-lk-dAO">
+                                <rect key="frame" x="23" y="188" width="378" height="61"/>
+                                <string key="text">Welcome to GoodrSkin! A place that changes  your idea of great skin. The skin of your dreams  is an attainable goal that we want you to achieve!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SKIN 101" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76R-ib-RZ0">
+                                <rect key="frame" x="20" y="152" width="156" height="28"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MAKEUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7R-Lz-ROU">
+                                <rect key="frame" x="20" y="650.66666666666663" width="97" height="28"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SKINCARE" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-lt-jlk">
+                                <rect key="frame" x="20.000000000000007" y="275" width="114.66666666666669" height="28"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae6-MC-dRn">
+                                <rect key="frame" x="14" y="303" width="387" height="324.66666666666674"/>
+                                <string key="text">- CONSISTANCY IS KEY. Be dedicated to taking care of you!  - JUST WING IT. The only way to know if products work for you is to try it! A product that works for one person might not work for you so dont take peoples opinions too seriously!
+
+- LISTEN. Your skin talks to you. It cries. It screams. It flourishes. All you gotta do is look at it and make observastions!  DON'T FREAK OUT. Just because your skin is freaking out doesn't mean you have to. To quote Hannah Montanna, "Everybody has those days"</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GoodrSkin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-a9-EWg">
+                                <rect key="frame" x="85" y="88" width="244" height="42"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2x-aA-ApN">
+                                <rect key="frame" x="17" y="686" width="381" height="128"/>
+                                <string key="text">- BE YOU. You can wear makeup as  simple as Karlie Kloss or as crazy as a Sephora  worker. 
+
+- Just watch youtube tbh</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v2x-aA-ApN" secondAttribute="trailing" constant="16" id="1uL-V7-PaV"/>
+                            <constraint firstItem="76R-ib-RZ0" firstAttribute="top" secondItem="YjN-a9-EWg" secondAttribute="bottom" constant="22" id="2ZE-gY-s6X"/>
+                            <constraint firstItem="v2x-aA-ApN" firstAttribute="top" secondItem="J7R-Lz-ROU" secondAttribute="bottom" constant="7.3300000000000001" id="41A-Zz-AuM"/>
+                            <constraint firstItem="76R-ib-RZ0" firstAttribute="top" secondItem="YjN-a9-EWg" secondAttribute="bottom" constant="22" id="4NH-TY-Qhc"/>
+                            <constraint firstItem="v2x-aA-ApN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="6F7-vm-1rW"/>
+                            <constraint firstItem="J7R-Lz-ROU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6SO-av-kYX"/>
+                            <constraint firstItem="6Qx-lt-jlk" firstAttribute="top" secondItem="Axr-lk-dAO" secondAttribute="bottom" constant="26" id="76x-sc-dav"/>
+                            <constraint firstItem="J7R-Lz-ROU" firstAttribute="top" secondItem="ae6-MC-dRn" secondAttribute="bottom" constant="23" id="ASh-Dy-w94"/>
+                            <constraint firstItem="Axr-lk-dAO" firstAttribute="top" secondItem="76R-ib-RZ0" secondAttribute="bottom" constant="8" id="CMQ-ZI-1Va"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v2x-aA-ApN" secondAttribute="bottom" constant="74.329999999999998" id="EXG-JB-i77"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="76R-ib-RZ0" secondAttribute="trailing" constant="238" id="EtR-0M-IMR"/>
+                            <constraint firstItem="ae6-MC-dRn" firstAttribute="top" secondItem="6Qx-lt-jlk" secondAttribute="bottom" id="I31-Ke-iiV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ae6-MC-dRn" secondAttribute="trailing" constant="13" id="JNC-H9-uWq"/>
+                            <constraint firstItem="J7R-Lz-ROU" firstAttribute="top" secondItem="ae6-MC-dRn" secondAttribute="bottom" constant="23" id="KjS-hu-OxA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Axr-lk-dAO" secondAttribute="trailing" constant="13" id="NW4-1c-wiF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Qx-lt-jlk" secondAttribute="trailing" constant="279.32999999999998" id="XdN-jp-qqe"/>
+                            <constraint firstItem="6Qx-lt-jlk" firstAttribute="top" secondItem="Axr-lk-dAO" secondAttribute="bottom" constant="26" id="aPt-cw-UVr"/>
+                            <constraint firstItem="Axr-lk-dAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="cyH-Gz-aFM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YjN-a9-EWg" secondAttribute="trailing" constant="85" id="dGg-rZ-RMc"/>
+                            <constraint firstItem="Axr-lk-dAO" firstAttribute="top" secondItem="76R-ib-RZ0" secondAttribute="bottom" constant="8" id="ewp-VD-gIa"/>
+                            <constraint firstItem="6Qx-lt-jlk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g1Z-Mw-PK8"/>
+                            <constraint firstItem="76R-ib-RZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k3a-Wy-s1Y"/>
+                            <constraint firstItem="ae6-MC-dRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="kDB-sB-elM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7R-Lz-ROU" secondAttribute="trailing" constant="297" id="l4W-CQ-PHn"/>
+                            <constraint firstItem="YjN-a9-EWg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="lyi-NL-SXd"/>
+                            <constraint firstItem="ae6-MC-dRn" firstAttribute="top" secondItem="6Qx-lt-jlk" secondAttribute="bottom" id="rjB-lB-7m6"/>
+                            <constraint firstItem="YjN-a9-EWg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zJP-Pp-n50"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1374" y="799"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="etm-Ti-NEW">
+            <objects>
+                <viewController id="7HV-vb-Ehd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="au1-Mf-Oug">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="Up5-gX-wSR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mental Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-WX-lU6">
+                                <rect key="frame" x="78" y="125" width="259" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkq-Kb-H3S">
+                                <rect key="frame" x="78" y="244" width="269" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="27"/>
+                                <state key="normal" title="MENTAL HEALTH 101">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4Ev-It-Dga" kind="show" id="Ifo-Uv-qZC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQS-si-1H1">
+                                <rect key="frame" x="145" y="354" width="134" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="27"/>
+                                <state key="normal" title="HOTLINES">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RNq-W7-b8l" kind="show" id="7gK-TK-wZi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="K88-nu-iwT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sW1-6F-JSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456.521739130435" y="-260.49107142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1xZ-ZQ-kZz">
+            <objects>
+                <viewController id="x37-mm-JHr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wMe-T8-4TV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="11p-NT-OWt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GoodrPeriod" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc8-rH-hyI">
+                                <rect key="frame" x="100" y="88" width="215" height="42"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQL-Wu-PUL">
+                                <rect key="frame" x="20" y="196" width="394" height="81"/>
+                                <string key="text">Hi! You have entered the world of GoodrPeriod!
+Women's menstrual cycles should be normalized PERIODT!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="PERIOD 101" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wu2-AK-IZ4">
+                                <rect key="frame" x="20" y="167" width="149" height="32.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MISCONCEPTIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olf-23-JAg">
+                                <rect key="frame" x="20" y="285" width="243" height="33"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="45" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMA-Qb-oMl">
+                                <rect key="frame" x="20" y="326" width="365" height="345"/>
+                                <string key="text">There are many misconceptions and negative connotations that make people feel uncomfortable when they hear anything remotly connected to a womans period. We want to normalize the mentural cycle.  Some misconceptioons are: - That periods are dirty 
+- That they are shameful and shoud.'t be talked about  - That you will sync with your friends 
+- That you can't get preggers on your period (you dont wanna have an And I Oop moment) </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="EATING" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ny-U8-yCf">
+                                <rect key="frame" x="20" y="678" width="135" height="32.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVu-2B-uHC">
+                                <rect key="frame" x="29" y="718" width="365" height="122"/>
+                                <string key="text">- dark, leafy greens
+- rooted vegetables
+- sesame seeds
+- avocado
+- almonds
+- seaweed</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Olf-23-JAg" firstAttribute="top" secondItem="bQL-Wu-PUL" secondAttribute="bottom" constant="8" id="0fP-Fv-enp"/>
+                            <constraint firstItem="Fdm-rU-w5L" firstAttribute="trailing" secondItem="EVu-2B-uHC" secondAttribute="trailing" constant="20" id="7HC-7u-4aw"/>
+                            <constraint firstItem="Fdm-rU-w5L" firstAttribute="trailing" secondItem="6Ny-U8-yCf" secondAttribute="trailing" constant="259" id="AKw-u6-4b0"/>
+                            <constraint firstItem="Fdm-rU-w5L" firstAttribute="bottom" secondItem="EVu-2B-uHC" secondAttribute="bottom" constant="22" id="Al2-ku-4o4"/>
+                            <constraint firstItem="fc8-rH-hyI" firstAttribute="leading" secondItem="Fdm-rU-w5L" secondAttribute="leading" constant="100" id="FzN-X2-dc6"/>
+                            <constraint firstItem="Olf-23-JAg" firstAttribute="top" secondItem="bQL-Wu-PUL" secondAttribute="bottom" constant="8" id="KGE-OC-ElJ"/>
+                            <constraint firstItem="wu2-AK-IZ4" firstAttribute="top" secondItem="fc8-rH-hyI" secondAttribute="bottom" constant="37" id="Kg1-f8-Irg"/>
+                            <constraint firstItem="SMA-Qb-oMl" firstAttribute="top" secondItem="Olf-23-JAg" secondAttribute="bottom" constant="8" id="Mz3-zv-6ah"/>
+                            <constraint firstItem="wu2-AK-IZ4" firstAttribute="leading" secondItem="Fdm-rU-w5L" secondAttribute="leading" constant="20" id="Neb-a8-qZl"/>
+                            <constraint firstItem="SMA-Qb-oMl" firstAttribute="top" secondItem="Olf-23-JAg" secondAttribute="bottom" constant="8" id="OVF-jc-FeX"/>
+                            <constraint firstItem="Fdm-rU-w5L" firstAttribute="trailing" secondItem="Olf-23-JAg" secondAttribute="trailing" constant="151" id="R97-zd-Etr"/>
+                            <constraint firstItem="SMA-Qb-oMl" firstAttribute="leading" secondItem="Fdm-rU-w5L" secondAttribute="leading" constant="20" id="Tf7-00-0mr"/>
+                            <constraint firstItem="bQL-Wu-PUL" firstAttribute="trailing" secondItem="Fdm-rU-w5L" secondAttribute="trailing" id="XfM-GQ-w6P"/>
+                            <constraint firstItem="bQL-Wu-PUL" firstAttribute="top" secondItem="fc8-rH-hyI" secondAttribute="bottom" constant="66" id="Yz2-aJ-vNI"/>
+                            <constraint firstItem="EVu-2B-uHC" firstAttribute="top" secondItem="6Ny-U8-yCf" secondAttribute="bottom" constant="8.6699999999999999" id="bMy-He-1Xi"/>
+                            <constraint firstItem="Fdm-rU-w5L" firstAttribute="trailing" secondItem="wu2-AK-IZ4" secondAttribute="trailing" constant="245" id="bco-0l-V4b"/>
+                            <constraint firstItem="6Ny-U8-yCf" firstAttribute="leading" secondItem="Fdm-rU-w5L" secondAttribute="leading" constant="20" id="hHM-Wv-tFn"/>
+                            <constraint firstItem="fc8-rH-hyI" firstAttribute="top" secondItem="Fdm-rU-w5L" secondAttribute="top" id="iyv-be-q3v"/>
+                            <constraint firstItem="6Ny-U8-yCf" firstAttribute="top" secondItem="SMA-Qb-oMl" secondAttribute="bottom" constant="7" id="k4c-pY-DKC"/>
+                            <constraint firstItem="Olf-23-JAg" firstAttribute="leading" secondItem="Fdm-rU-w5L" secondAttribute="leading" constant="20" id="lLJ-0s-E7T"/>
+                            <constraint firstItem="bQL-Wu-PUL" firstAttribute="leading" secondItem="Fdm-rU-w5L" secondAttribute="leading" constant="20" id="ld6-gA-J6c"/>
+                            <constraint firstItem="EVu-2B-uHC" firstAttribute="top" secondItem="6Ny-U8-yCf" secondAttribute="bottom" constant="7.6699999999999999" id="n3t-EH-xba"/>
+                            <constraint firstItem="EVu-2B-uHC" firstAttribute="leading" secondItem="Fdm-rU-w5L" secondAttribute="leading" constant="29" id="q7N-Np-LEY"/>
+                            <constraint firstItem="Olf-23-JAg" firstAttribute="top" secondItem="wu2-AK-IZ4" secondAttribute="bottom" constant="85.670000000000002" id="qbM-Ui-6VM"/>
+                            <constraint firstItem="wu2-AK-IZ4" firstAttribute="top" secondItem="fc8-rH-hyI" secondAttribute="bottom" constant="37" id="t7w-17-DRR"/>
+                            <constraint firstItem="Fdm-rU-w5L" firstAttribute="trailing" secondItem="fc8-rH-hyI" secondAttribute="trailing" constant="99" id="u1E-QO-hGM"/>
+                            <constraint firstItem="Fdm-rU-w5L" firstAttribute="trailing" secondItem="SMA-Qb-oMl" secondAttribute="trailing" constant="29" id="yhc-g9-6Az"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fdm-rU-w5L"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxe-XT-dZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="698"/>
+        </scene>
+        <!--Yoga Video View Controller-->
+        <scene sceneID="gdb-XM-NB4">
+            <objects>
+                <viewController id="3Cm-KM-A8s" customClass="yogaVideoViewController" customModule="goodrSkin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="elC-Ly-616">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcs-TN-j4l">
+                                <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DPR-hR-UXX"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="jcs-TN-j4l" id="Avu-vw-nXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3J-wX-EgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3330" y="-909"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ELL-Ad-bUz">
+            <objects>
+                <viewController id="4Ev-It-Dga" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Onf-L0-BRu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUn-i3-d86">
+                                <rect key="frame" x="6" y="-41" width="408" height="937"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="2No-1C-yiz">
+                                        <rect key="frame" x="-3" y="20" width="414" height="917"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miQ-iv-DyY">
+                                        <rect key="frame" x="8" y="232" width="369" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Welcome to GOODR Health!
+First thing you should know is that mental health
+issues are completely normal. 1 in 4 people in
+the world will be affected by a mental health
+disorder.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mental Health 101:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAh-Ux-sbu">
+                                        <rect key="frame" x="8" y="191" width="214" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stretches and Yoga:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEG-nC-yN7">
+                                        <rect key="frame" x="8" y="342" width="244" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-vI-KeT">
+                                        <rect key="frame" x="8" y="383" width="394" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">It is good to stretch first thing in the morning to start the day off on a good foot. Stretch first thing in the morning for 10 minutes.
+Here are some stretches:</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rD5-yn-cHm">
+                                        <rect key="frame" x="71" y="697" width="266" height="194"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="button" image="Screen Shot 2019-07-19 at 9.43.33 AM"/>
+                                        <connections>
+                                            <segue destination="3Cm-KM-A8s" kind="show" id="IlJ-nT-ocP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM0-14-Wjh">
+                                        <rect key="frame" x="72" y="502" width="266" height="187"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="Screen Shot 2019-07-19 at 9.44.34 AM"/>
+                                        <connections>
+                                            <segue destination="xnt-7O-lH9" kind="show" id="oXW-Cd-f8M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="X6i-Vj-XXF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwt-iW-X3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476.811594202899" y="-1283.0357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="05C-Q8-JfH">
+            <objects>
+                <viewController id="RNq-W7-b8l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqL-ub-mhx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="goodr gradient" translatesAutoresizingMaskIntoConstraints="NO" id="kzT-Ob-pj8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="37" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z79-4o-asA">
+                                <rect key="frame" x="13" y="144" width="381" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Anxiety and Depression Association of America
+(ADAA)
+Phone: 240-485-1001 
+Children and Adults with Attention-
+Deficit/Hyperactivity Disorder (CHADD)
+Phone: 800-233-4050 
+Depression and Bipolar Support Alliance (DBSA)
+Phone: 800-826-3632 
+International OCD Foundation
+Phone: 617-973-5801 
+National Center of Excellence for Eating Disorders
+(NCEED)
+Phone: 800-931-2237 
+Schizophrenia and Related Disorders Alliance
+of America (SARDAA)
+Phone: 240-423-9432 
+Sidran Institute
+Phone: 410-825-8888 
+TARA (Treatment and Research Advancements
+for Borderline Personality Disorder)
+Phone: 888-482-7227</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hotlines:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPb-Xb-h57">
+                                <rect key="frame" x="123" y="103" width="161" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Glass" family="Glass" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="etR-SH-aUT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxO-Yr-hDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3243" y="-260"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="hue-F9-kK6">
+            <objects>
+                <viewController storyboardIdentifier="Streching Video" id="xnt-7O-lH9" customClass="VideoViewController" customModule="goodrSkin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4zZ-eg-xWx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYA-1I-wtN">
+                                <rect key="frame" x="26" y="44" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qcc-d4-p4k">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="032-XU-k5G"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="qcc-d4-p4k" id="ECt-L7-9qE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LTy-eu-ccw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3329" y="-1586"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z3K-aB-MiN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tcS-hg-DAV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ntT-qd-xFw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wsW-GP-meK" kind="relationship" relationship="rootViewController" id="IxB-qT-X3P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1I5-yw-5Bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728.98550724637687" y="-6.0267857142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2019-07-19 at 9.43.33 AM" width="678" height="486"/>
+        <image name="Screen Shot 2019-07-19 at 9.44.34 AM" width="684" height="482"/>
+        <image name="goodr gradient" width="300" height="300"/>
+    </resources>
 </document>
